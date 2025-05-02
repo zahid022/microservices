@@ -48,6 +48,16 @@ npm run start:docker
 
 Bu əmrlə PostgreSQL işə düşəcək.
 
+### Microservice-i işə salmaq
+
+```bash
+npm run start:dev
+```
+
+Bu komanda order-service microservisini NestJS development modunda işə salır.
+
+---
+
 ---
 
 ## İstifadə

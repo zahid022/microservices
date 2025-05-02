@@ -54,6 +54,14 @@ npm run start:docker
 
 Bu əmrlə həm PostgreSQL, həm də RabbitMQ docker konteynerləri işə düşəcək.
 
+### Microservice-i işə salmaq
+
+```bash
+npm run start:dev
+```
+
+Bu komanda user-service microservisini NestJS development modunda işə salır.
+
 ---
 
 ## İstifadə
