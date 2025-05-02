@@ -48,6 +48,12 @@ npm run start:docker
 
 Bu əmrlə PostgreSQL işə düşəcək.
 
+### Prisma generate
+
+```bash
+npx prisma generate
+```
+
 ### Microservice-i işə salmaq
 
 ```bash
