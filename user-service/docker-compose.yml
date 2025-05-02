@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres-first:
+    image: postgres:15
+    container_name: postgres-first
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata1:/var/lib/postgresql/data
+    networks:
+      - backend
+  
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"  
+      - "15672:15672" 
+    networks:
+      - backend
+
+volumes:
+  pgdata1:
+
+networks:
+  backend:
